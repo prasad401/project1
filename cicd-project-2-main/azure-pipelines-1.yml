@@ -7,10 +7,10 @@ trigger:
 - main
 
 pool:
-  vmImage: centos 7.9.2009
+  vmImage: centos 7.9.2010
 
 steps:
-- task: Maven@3
+- task: Maven@30
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
